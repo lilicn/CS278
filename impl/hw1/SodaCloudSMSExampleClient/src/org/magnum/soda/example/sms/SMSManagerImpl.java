@@ -61,7 +61,7 @@ public class SMSManagerImpl implements SMSManager, SMSSender {
 					 * received() method
 					 * 
 					 */
-					final SMS sms = new SMS();
+					SMS sms = new SMS();
 					sms.setContent(msg.getDisplayMessageBody());
 					sms.setFrom(msg.getDisplayOriginatingAddress());
 					received(sms);
