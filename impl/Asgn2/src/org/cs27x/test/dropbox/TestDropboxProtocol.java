@@ -66,19 +66,21 @@ public class TestDropboxProtocol {
 				filemgr);
 
 		Path p = Paths.get("test-data/1");
-		
+
 		// if file exist
-		if (!Files.exists(p)) Files.createFile(p);
+		if (!Files.exists(p))
+			Files.createFile(p);
 		protocol.addFile(p);
 		verify(transport, times(1)).publish(any(DropboxCmd.class));
-		
+
 		// if file is a dir and exist
 		// fail
 		// add if(!Files.isDirectory(p))
-		if (!Files.exists(p)) Files.createDirectory(p);
+		if (!Files.exists(p))
+			Files.createDirectory(p);
 		protocol.addFile(p);
 		verify(transport, times(2)).publish(any(DropboxCmd.class));
-		
+
 		// if file not exist
 		// fail
 		// add if(Files.exists(p))
@@ -86,15 +88,16 @@ public class TestDropboxProtocol {
 			Files.delete(p);
 		protocol.addFile(p);
 		verify(transport, times(3)).publish(any(DropboxCmd.class));
-		
+
 		// if file is a directory and not exist
-		if (Files.exists(p)) Files.delete(p);
+		if (Files.exists(p))
+			Files.delete(p);
 		protocol.addFile(p);
 		verify(transport, times(4)).publish(any(DropboxCmd.class));
 	}
 
 	@Test
-	public void testRemoveFile(){
+	public void testRemoveFile() {
 		DropboxTransport transport = mock(DropboxTransport.class);
 		FileStates states = mock(FileStates.class);
 		FileManager filemgr = mock(FileManager.class);
@@ -116,23 +119,27 @@ public class TestDropboxProtocol {
 		DropboxProtocol protocol = new DropboxProtocol(transport, states,
 				filemgr);
 		// if file exist
-		// fail
-		// add if(Files.exists(p))
 		Path p = Paths.get("test-data/1");
-		if (!Files.exists(p)) Files.createFile(p);
+		if (!Files.exists(p))
+			Files.createFile(p);
 		protocol.updateFile(p);
 		verify(transport, times(1)).publish(any(DropboxCmd.class));
-		
+
 		// if file not exist
-		if (Files.exists(p)) Files.delete(p);
+		// fail
+		// add if(Files.exists(p))
+		if (Files.exists(p))
+			Files.delete(p);
 		protocol.updateFile(p);
 		verify(transport, times(2)).publish(any(DropboxCmd.class));
-		
+
 		// if it is a dir
 		// fail
 		// add if(!Files.isDirectory(p))
-		if (!Files.exists(p)) Files.createDirectory(p);
+		if (!Files.exists(p))
+			Files.createDirectory(p);
 		protocol.updateFile(p);
-		verify(transport, times(3)).publish(any(DropboxCmd.class));	}
+		verify(transport, times(3)).publish(any(DropboxCmd.class));
+	}
 
 }
