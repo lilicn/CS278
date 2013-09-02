@@ -5,15 +5,15 @@ import java.nio.file.Path;
 
 import org.cs27x.dropbox.DropboxCmd.OpCode;
 import org.cs27x.filewatcher.FileState;
-import org.cs27x.filewatcher.FileStates;
+import org.cs27x.filewatcher.FileStatesInterface;
 
 public class DropboxCmdProcessor implements DropboxTransportListener {
 
 	private final FileManager fileManager_;
 
-	private final FileStates fileStates_;
+	private final FileStatesInterface fileStates_;
 
-	public DropboxCmdProcessor(FileStates states, FileManager mgr) {
+	public DropboxCmdProcessor(FileStatesInterface states, FileManager mgr) {
 		super();
 		fileStates_ = states;
 		fileManager_ = mgr;
@@ -23,15 +23,14 @@ public class DropboxCmdProcessor implements DropboxTransportListener {
 		try {
 			if (cmd.getOpCode() == OpCode.REMOVE) {
 				FileState state = fileStates_.getState(resolved);
-				if(state != null){
+				if (state != null) {
 					state.setSize(-1);
 				}
 			} else if (cmd.getOpCode() == OpCode.ADD
 					|| cmd.getOpCode() == OpCode.UPDATE) {
 				FileState state = fileStates_.getOrCreateState(resolved);
 				state.setSize(cmd.getData().length);
-				state.setLastModificationDate(Files
-						.getLastModifiedTime(resolved));
+				state.setLastModificationDate(Files.getLastModifiedTime(resolved));
 			}
 		} catch (Exception e) {
 			throw new RuntimeException(e);
@@ -41,17 +40,16 @@ public class DropboxCmdProcessor implements DropboxTransportListener {
 	@Override
 	public void cmdReceived(DropboxCmd cmd) {
 		try {
-
 			Path resolved = fileManager_.resolve(cmd.getPath());
 			OpCode op = cmd.getOpCode();
-
+			System.out.println("cmdReceived: " + cmd.getPath());
 			if (op == OpCode.ADD || op == OpCode.UPDATE) {
 				fileManager_
 						.write(resolved, cmd.getData(), op == OpCode.UPDATE);
 			} else if (op == OpCode.REMOVE) {
 				fileManager_.delete(resolved);
 			}
-			
+
 			updateFileState(cmd, resolved);
 
 		} catch (Exception e) {

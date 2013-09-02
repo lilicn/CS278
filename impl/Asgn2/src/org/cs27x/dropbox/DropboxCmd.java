@@ -1,6 +1,7 @@
 package org.cs27x.dropbox;
 
 import java.io.Serializable;
+import java.nio.file.attribute.FileTime;
 
 public class DropboxCmd implements Serializable {
 
@@ -14,6 +15,7 @@ public class DropboxCmd implements Serializable {
 	private String path_;
 	private byte[] data_;
 	private OpCode opCode_;
+	private FileTime fileTime_;  // add after test
 
 	public String getFrom() {
 		return from_;
@@ -46,5 +48,4 @@ public class DropboxCmd implements Serializable {
 	public void setOpCode(OpCode opCode) {
 		opCode_ = opCode;
 	}
-
 }

@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.attribute.FileTime;
 
 public class DefaultFileManager implements FileManager {
 
@@ -20,10 +21,12 @@ public class DefaultFileManager implements FileManager {
 	
 	@Override
 	public void write(Path p, byte[] data, boolean overwrite) throws IOException{
-		
-		if (!Files.exists(p) || overwrite) {
-			try (OutputStream out = Files.newOutputStream(p)) {
-				out.write(data);
+		// modify after test
+		if(data!=null){
+			if (!Files.exists(p) || overwrite) {
+				try (OutputStream out = Files.newOutputStream(p)) {
+					out.write(data);
+				}
 			}
 		}
 	}
@@ -39,5 +42,11 @@ public class DefaultFileManager implements FileManager {
 	public Path resolve(String relativePathName) {
 		return rootDir_.resolve(relativePathName);
 	}
-	
+
+	@Override
+	public FileTime getLastModifiedTime(Path p) throws IOException {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

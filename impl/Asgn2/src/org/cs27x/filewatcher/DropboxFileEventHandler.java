@@ -4,6 +4,7 @@ import static java.nio.file.StandardWatchEventKinds.ENTRY_CREATE;
 import static java.nio.file.StandardWatchEventKinds.ENTRY_DELETE;
 import static java.nio.file.StandardWatchEventKinds.ENTRY_MODIFY;
 
+import java.io.IOException;
 import java.nio.file.Path;
 
 import org.cs27x.dropbox.DropboxProtocol;
@@ -25,15 +26,29 @@ public class DropboxFileEventHandler implements FileEventHandler {
 
 	@Override
 	public void handle(FileEvent evt) {
-		Path p = evt.getFile();
-		p = fileHandler_.resolve(p.getFileName().toString());
-		evt = new FileEvent(evt.getEventType(), p);
-
+		evt = newFileEventAfterResolve(evt);
 		try {
 			evt = fileStates_.filter(evt);
+			finalHandle(evt);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	// find error after test
+	public FileEvent newFileEventAfterResolve(FileEvent evt){
+		Path p = evt.getFile();
+		p = fileHandler_.resolve(p.getFileName().toString());
+		return new FileEvent(evt.getEventType(), p);
+	}
+	
+	public FileEvent newFileEventAfterFilter(FileEvent evt) throws IOException{
+		return fileStates_.filter(evt);
+	}
 
+	public void finalHandle(FileEvent evt){
+		try{
 			if (evt != null) {
-
 				if (evt.getEventType() == ENTRY_CREATE) {
 					transport_.addFile(evt.getFile());
 				} else if (evt.getEventType() == ENTRY_MODIFY) {
@@ -42,9 +57,8 @@ public class DropboxFileEventHandler implements FileEventHandler {
 					transport_.removeFile(evt.getFile());
 				}
 			}
-		} catch (Exception e) {
+		}catch(Exception e){
 			e.printStackTrace();
 		}
 	}
-
 }

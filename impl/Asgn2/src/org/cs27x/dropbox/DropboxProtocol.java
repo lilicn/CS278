@@ -1,5 +1,6 @@
 package org.cs27x.dropbox;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -29,18 +30,19 @@ public class DropboxProtocol {
 		transport_.publish(cmd);
 	}
 
-	public void addFile(Path p) {
+	public void addFile(Path p) throws IOException {
 		DropboxCmd cmd = new DropboxCmd();
 		cmd.setOpCode(OpCode.ADD);
 		cmd.setPath(p.getFileName().toString());
-
 		try {
-
-			try (InputStream in = Files.newInputStream(p)) {
-				byte[] data = IOUtils.toByteArray(in);
-				cmd.setData(data);
+			// add after test
+			// only setData when it is not a dir and file exist
+			if(!Files.isDirectory(p) && Files.exists(p)){
+				try (InputStream in = Files.newInputStream(p)) {
+					byte[] data = IOUtils.toByteArray(in);
+					cmd.setData(data);
+				}
 			}
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -55,23 +57,24 @@ public class DropboxProtocol {
 		publish(cmd);
 	}
 
-	public void updateFile(Path p) {
+	public void updateFile(Path p) throws IOException {
 		DropboxCmd cmd = new DropboxCmd();
 		cmd.setOpCode(OpCode.UPDATE);
 		cmd.setPath(p.getFileName().toString());
+
 		try {
-
-			try (InputStream in = Files.newInputStream(p)) {
-				byte[] data = IOUtils.toByteArray(in);
-				cmd.setData(data);
+			// modify after test
+			// not add data if it is directory or not exist
+			if(Files.exists(p) && !Files.isDirectory(p)){
+				try (InputStream in = Files.newInputStream(p)) {
+					byte[] data = IOUtils.toByteArray(in);
+					cmd.setData(data);
+				}
 			}
-
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 
 		publish(cmd);
 	}
-
-
 }

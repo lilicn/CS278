@@ -1,4 +1,4 @@
-package org.cs27x.filewatcher;
+package org.cs27x.test.FileReactorTest;
 
 import static java.nio.file.StandardWatchEventKinds.ENTRY_CREATE;
 import static java.nio.file.StandardWatchEventKinds.ENTRY_DELETE;
@@ -7,8 +7,11 @@ import static java.nio.file.StandardWatchEventKinds.OVERFLOW;
 
 import java.io.IOException;
 import java.nio.file.FileSystems;
+import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.nio.file.WatchEvent;
+import java.nio.file.WatchEvent.Kind;
 import java.nio.file.WatchKey;
 import java.nio.file.WatchService;
 import java.util.ArrayList;
@@ -16,7 +19,11 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class FileReactor implements FileReactorInterface{
+import org.cs27x.filewatcher.FileEvent;
+import org.cs27x.filewatcher.FileEventHandler;
+import org.cs27x.filewatcher.FileReactorInterface;
+
+public class FileReactorStub implements FileReactorInterface {
 
 	private class Dispatcher implements Runnable {
 		private final FileEventHandler handler_;
@@ -42,13 +49,15 @@ public class FileReactor implements FileReactorInterface{
 	private List<FileEventHandler> fileHandlers_ = new ArrayList<>();
 	private boolean running_;
 
-	public FileReactor(Path toWatch, ExecutorService executor) {
+	private WatchEvent<?> watchEvent;
+	
+	public FileReactorStub(Path toWatch, ExecutorService executor) {
 		super();
 		toWatch_ = toWatch.toAbsolutePath();
 		executor_ = executor;
 	}
 
-	public FileReactor(Path toWatch) {
+	public FileReactorStub(Path toWatch) {
 		this(toWatch, Executors.newSingleThreadExecutor());
 	}
 
@@ -58,11 +67,34 @@ public class FileReactor implements FileReactorInterface{
 		watchLoop();
 	}
 
-	private void watchLoop() throws IOException {
+	public void singleWatch(Kind<?> kind) throws IOException {
+		WatchService watcher = FileSystems.getDefault().newWatchService();
+		toWatch_.register(watcher, kind);
 
+		// wait for key to be signaled
+		WatchKey key = null;
+		try {
+			key = watcher.take();
+		} catch (InterruptedException x) {
+			
+		}
+		if (key != null) {
+			System.out.println("0");
+			for (WatchEvent<?> event : key.pollEvents()) {
+				watchEvent = event;
+				System.out.println("Processing event...");
+			}
+		}
+	}
+
+	public WatchEvent<?> getWatchEvent(){
+		return watchEvent;
+	}
+	
+	private void watchLoop() throws IOException {
 		WatchService watcher = FileSystems.getDefault().newWatchService();
 		toWatch_.register(watcher, ENTRY_CREATE, ENTRY_DELETE, ENTRY_MODIFY);
-
+		boolean isFirst = true;
 		while (running_) {
 
 			// wait for key to be signaled
@@ -70,18 +102,22 @@ public class FileReactor implements FileReactorInterface{
 			try {
 
 				key = watcher.take();
-				
+
 			} catch (InterruptedException x) {
 				return;
 			}
 
 			if (key != null) {
 				for (WatchEvent<?> event : key.pollEvents()) {
-
+					
 					if (!running_) {
 						return;
 					}
 					System.out.println("Processing event...");
+					if(isFirst){
+						watchEvent = event;
+						isFirst = false;
+					}
 					processEvent(event);
 
 				}
@@ -96,7 +132,7 @@ public class FileReactor implements FileReactorInterface{
 			}
 		}
 	}
-	
+
 	@SuppressWarnings("unchecked")
 	private void processEvent(WatchEvent<?> event) {
 		WatchEvent.Kind<?> kind = event.kind();
@@ -116,7 +152,7 @@ public class FileReactor implements FileReactorInterface{
 			// If the filename is "test" and the directory is "foo",
 			// the resolved name is "test/foo".
 			Path child = toWatch_.resolve(filename);
-
+			
 			try {
 				FileEvent evt = new FileEvent(kind, child);
 				dispatch(evt);
@@ -132,7 +168,7 @@ public class FileReactor implements FileReactorInterface{
 		Thread.interrupted();
 	}
 
-	private void dispatch(final FileEvent evt) {
+	public void dispatch(final FileEvent evt) {
 		for (FileEventHandler h : fileHandlers_) {
 			executor_.submit(new Dispatcher(h, evt));
 		}
@@ -147,4 +183,5 @@ public class FileReactor implements FileReactorInterface{
 	public void removeHandler(FileEventHandler h) {
 		fileHandlers_.remove(h);
 	}
+
 }
