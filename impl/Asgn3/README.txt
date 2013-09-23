@@ -1,44 +1,42 @@
-----------------------------------------------------------------------------------
 Assignment 3
-----------------------------------------------------------------------------------
-----------------------------------------------------------------------------------
+============
 Introduction
-----------------------------------------------------------------------------------
+-------------
 - Continuous Integrated test for Dropbox
 - One command or click, all automatic
 - You don't need to worry about the process not be killed or the different requirement for different system
 
 How to run ?
-----------------------------------------------------------------------------------
+-------------
 - build.xml is the default Ant build file, main is the default method
 - You can just use "ant main" without setting any arguments
 - You can set the root directory for server and client, eg. "ant -Darg0=test-data/server/ -Darg1=test-data/client/ main"
 - If using eclipse, you can set the Ant arguments in the External Tool Configurations, eg. "-Darg0=test-data/server/ -Darg1=test-data/client/"
 
 How to debug ?
-----------------------------------------------------------------------------------
+----------------
 - You can use the log files which will be generated after test in log/ to debug
 
 What's the expected result ?
-----------------------------------------------------------------------------------
+-----------------------------------
 - One failure should detected by the DirTest as the current Dropbox does not support DIR operations
 - If more than one failure happened, it is possible that the DEFAULTREPONSETIME is not enough, just adjust the DEFAULTREPONSETIME in src/org/cs27x/util/Args.java
 
 What tools or techniques are used ?
-----------------------------------------------------------------------------------
+-------------------------------------
 - Java ProcessBuilder 
 - JUnit 
 - Ant
 
 What is new ?
-----------------------------------------------------------------------------------
+-------------------------------------
 - build.xml
 - src/org/cs27x/test
 - src/org/cs27x/util
 - log/
 
 What will be generated after test ?
-----------------------------------------------------------------------------------
+-------------------------------------
 - build/ and class files in it
 - Dropbox.jar
 - args.txt which stores the root directory for server and client
@@ -46,7 +44,7 @@ What will be generated after test ?
 
 
 Overview: 
-----------------------------------------------------------------------------------
+-------------------------------------
 This assignment will require you to build a series of integration tests for the
 Dropbox code base. The key change from the previous assignment is that you must
 create a script, executable, or other system for executing at least two instances
