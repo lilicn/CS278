@@ -1,0 +1,1450 @@
+1
+Sep 22, 2013 11:32:58 PM com.hazelcast.config.XmlConfigBuilder
+INFO: Looking for hazelcast.xml config file in classpath.
+Sep 22, 2013 11:32:58 PM com.hazelcast.config.XmlConfigBuilder
+INFO: Using configuration file file:/C:/Users/Li/workspace_4.3/Asgn3/Dropbox.jar!/hazelcast.xml in the classpath.
+Sep 22, 2013 11:32:58 PM com.hazelcast.impl.AddressPicker
+INFO: Interfaces is disabled, trying to pick one address from TCP-IP config addresses: [10.0.1.8]
+Sep 22, 2013 11:32:58 PM com.hazelcast.impl.AddressPicker
+INFO: Prefer IPv4 stack is true.
+Sep 22, 2013 11:32:59 PM com.hazelcast.impl.AddressPicker
+WARNING: Could not find a matching address to start with! Picking one of non-loopback addresses.
+Sep 22, 2013 11:32:59 PM com.hazelcast.impl.AddressPicker
+INFO: Picked Address[192.168.1.104]:5701, using socket ServerSocket[addr=/0:0:0:0:0:0:0:0,localport=5701], bind any local is true
+Sep 22, 2013 11:33:00 PM com.hazelcast.system
+INFO: [192.168.1.104]:5701 [dev] Hazelcast Community Edition 2.3.1 (20120831) starting at Address[192.168.1.104]:5701
+Sep 22, 2013 11:33:00 PM com.hazelcast.system
+INFO: [192.168.1.104]:5701 [dev] Copyright (C) 2008-2012 Hazelcast.com
+Sep 22, 2013 11:33:00 PM com.hazelcast.impl.LifecycleServiceImpl
+INFO: [192.168.1.104]:5701 [dev] Address[192.168.1.104]:5701 is STARTING
+Sep 22, 2013 11:33:00 PM com.hazelcast.impl.TcpIpJoiner
+INFO: [192.168.1.104]:5701 [dev] Connecting to possible member: Address[10.0.1.8]:5703
+Sep 22, 2013 11:33:00 PM com.hazelcast.impl.TcpIpJoiner
+INFO: [192.168.1.104]:5701 [dev] Connecting to possible member: Address[10.0.1.8]:5702
+Sep 22, 2013 11:33:00 PM com.hazelcast.impl.TcpIpJoiner
+INFO: [192.168.1.104]:5701 [dev] Connecting to possible member: Address[10.0.1.8]:5701
+Sep 22, 2013 11:33:05 PM com.hazelcast.impl.TcpIpJoiner
+INFO: [192.168.1.104]:5701 [dev] 
+
+
+Members [1] {
+	Member [192.168.1.104]:5701 this
+}
+
+Sep 22, 2013 11:33:05 PM com.hazelcast.impl.LifecycleServiceImpl
+INFO: [192.168.1.104]:5701 [dev] Address[192.168.1.104]:5701 is STARTED
+Sep 22, 2013 11:33:14 PM com.hazelcast.nio.SocketAcceptor
+INFO: [192.168.1.104]:5701 [dev] 5701 is accepting socket connection from /192.168.1.104:50756
+Sep 22, 2013 11:33:14 PM com.hazelcast.nio.ConnectionManager
+INFO: [192.168.1.104]:5701 [dev] 5701 accepted socket connection from /192.168.1.104:50756
+Sep 22, 2013 11:33:21 PM com.hazelcast.nio.SocketConnector
+INFO: [192.168.1.104]:5701 [dev] Could not connect to: /10.0.1.8:5702. Reason: ConnectException[Connection timed out: connect]
+Sep 22, 2013 11:33:21 PM com.hazelcast.nio.SocketConnector
+INFO: [192.168.1.104]:5701 [dev] Could not connect to: /10.0.1.8:5703. Reason: ConnectException[Connection timed out: connect]
+Sep 22, 2013 11:33:21 PM com.hazelcast.nio.SocketConnector
+INFO: [192.168.1.104]:5701 [dev] Could not connect to: /10.0.1.8:5701. Reason: ConnectException[Connection timed out: connect]
+Sep 22, 2013 11:33:22 PM com.hazelcast.cluster.ClusterManager
+INFO: [192.168.1.104]:5701 [dev] 
+
+Members [2] {
+	Member [192.168.1.104]:5701 this
+	Member [192.168.1.104]:5702
+}
+
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+java.lang.NullPointerException
+	at java.nio.file.attribute.FileTime.compareTo(FileTime.java:197)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:51)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910815880Processing event...
+
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+Processing event...	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+Processing event...	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+Processing event...	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Processing event...
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910816057
+Processing event...
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+Processing event...
+Processing event...
+	at java.lang.Thread.run(Thread.java:724)Processing event...
+
+Processing event...
+Processing event...java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910816212
+
+Processing event...
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)Processing event...
+
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)Processing event...
+
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Processing event...
+Processing event...
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910816370
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910816530
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)Processing event...
+
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+Processing event...	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+Processing event...
+	at java.nio.file.Files.size(Files.java:2273)Processing event...
+
+Processing event...	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)Processing event...
+
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)Processing event...
+
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+Processing event...	at java.lang.Thread.run(Thread.java:724)
+
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910816690
+Processing event...
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910816854
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+Processing event...	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+Processing event...	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+Processing event...	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+	at java.lang.Thread.run(Thread.java:724)Processing event...
+
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910817021
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Processing event...
+Processing event...
+Processing event...
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910817188
+Processing event...
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+Processing event...
+Processing event...
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+Processing event...
+Processing event...
+Processing event...
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+Processing event...	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)Processing event...
+
+	at java.lang.Thread.run(Thread.java:724)
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910817357
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+Processing event...	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+Processing event...	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910817527
+Processing event...
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+Processing event...	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+Processing event...	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)Processing event...
+
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+Processing event...	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910817700
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910817872
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910818048
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+Processing event...	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)Processing event...
+
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)Processing event...
+
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910818224
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Processing event...
+Processing event...
+Processing event...java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910818403
+
+Processing event...
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910818582
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910818763
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910818947
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910819134
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910819338
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910819528
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910819717
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910819911
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910820104
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910820299
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910820494
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910820692
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910820893
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910821097
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910821305
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910821679
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910822037
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910822420
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910822837
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910823213
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910823588
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910823970
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910824343
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910824729
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910834220
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)Processing event...
+
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+Processing event...	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)Processing event...
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+	at java.lang.Thread.run(Thread.java:724)
+Processing event...
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910834395
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+Processing event...	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910834568
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910834743
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910834916
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910835091
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910835267
+Processing event...
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+Processing event...	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+Processing event...	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+
+	at java.lang.Thread.run(Thread.java:724)Processing event...
+
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910835451
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910835634
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+java.nio.file.NoSuchFileException: C:\Users\Li\workspace_4.3\Asgn3\test-data\server\test_1379910835810
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:79)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:192)
+	at java.nio.file.Files.readAttributes(Files.java:1684)
+	at java.nio.file.Files.size(Files.java:2273)
+	at org.cs27x.filewatcher.FileStates.filterCreateOrUpdate(FileStates.java:48)
+	at org.cs27x.filewatcher.FileStates.filter(FileStates.java:76)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:33)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+Processing event...
+java.nio.file.AccessDeniedException: test-data\server\test_1379910885046
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:229)
+	at java.nio.file.Files.newByteChannel(Files.java:315)
+	at java.nio.file.Files.newByteChannel(Files.java:361)
+	at java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:380)
+	at java.nio.file.Files.newInputStream(Files.java:106)
+	at org.cs27x.dropbox.DropboxProtocol.addFile(DropboxProtocol.java:39)
+	at org.cs27x.filewatcher.DropboxFileEventHandler.handle(DropboxFileEventHandler.java:38)
+	at org.cs27x.filewatcher.FileReactor$Dispatcher.run(FileReactor.java:33)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:334)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:166)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+Sep 22, 2013 11:34:45 PM com.hazelcast.impl.ListenerManager
+SEVERE: [192.168.1.104]:5701 [dev] Caught error while calling event listener; cause: java.lang.RuntimeException: java.lang.NullPointerException
+java.lang.RuntimeException: java.lang.RuntimeException: java.lang.NullPointerException
+	at org.cs27x.dropbox.DropboxCmdProcessor.cmdReceived(DropboxCmdProcessor.java:58)
+	at org.cs27x.dropbox.HazelcastTransport.onMessage(HazelcastTransport.java:95)
+	at com.hazelcast.impl.ListenerManager.callListener(ListenerManager.java:418)
+	at com.hazelcast.impl.ListenerManager.callListeners(ListenerManager.java:333)
+	at com.hazelcast.impl.BaseManager$2.run(BaseManager.java:1382)
+	at com.hazelcast.impl.executor.ParallelExecutorService$ParallelExecutorImpl$ExecutionSegment.run(ParallelExecutorService.java:212)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+	at com.hazelcast.impl.ExecutorThreadFactory$1.run(ExecutorThreadFactory.java:38)
+Caused by: java.lang.RuntimeException: java.lang.NullPointerException
+	at org.cs27x.dropbox.DropboxCmdProcessor.updateFileState(DropboxCmdProcessor.java:37)
+	at org.cs27x.dropbox.DropboxCmdProcessor.cmdReceived(DropboxCmdProcessor.java:55)
+	... 9 more
+Caused by: java.lang.NullPointerException
+	at org.cs27x.dropbox.DropboxCmdProcessor.updateFileState(DropboxCmdProcessor.java:32)
+	... 10 more
+
+Sep 22, 2013 11:34:45 PM com.hazelcast.impl.ListenerManager
+SEVERE: [192.168.1.104]:5701 [dev] Caught error while calling event listener; cause: java.nio.file.AccessDeniedException: test-data\server\test_1379910885046
+java.lang.RuntimeException: java.nio.file.AccessDeniedException: test-data\server\test_1379910885046
+	at org.cs27x.dropbox.DropboxCmdProcessor.cmdReceived(DropboxCmdProcessor.java:58)
+	at org.cs27x.dropbox.HazelcastTransport.onMessage(HazelcastTransport.java:95)
+	at com.hazelcast.impl.ListenerManager.callListener(ListenerManager.java:418)
+	at com.hazelcast.impl.ListenerManager.callListeners(ListenerManager.java:333)
+	at com.hazelcast.impl.BaseManager$2.run(BaseManager.java:1382)
+	at com.hazelcast.impl.executor.ParallelExecutorService$ParallelExecutorImpl$ExecutionSegment.run(ParallelExecutorService.java:212)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:724)
+	at com.hazelcast.impl.ExecutorThreadFactory$1.run(ExecutorThreadFactory.java:38)
+Caused by: java.nio.file.AccessDeniedException: test-data\server\test_1379910885046
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:229)
+	at java.nio.file.spi.FileSystemProvider.newOutputStream(FileSystemProvider.java:430)
+	at java.nio.file.Files.newOutputStream(Files.java:170)
+	at org.cs27x.dropbox.DefaultFileManager.write(DefaultFileManager.java:25)
+	at org.cs27x.dropbox.DropboxCmdProcessor.cmdReceived(DropboxCmdProcessor.java:49)
+	... 9 more
+
+Processing event...

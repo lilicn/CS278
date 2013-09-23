@@ -1,16 +1,16 @@
 package org.cs27x.dropbox.test;
 
 import static java.nio.file.StandardWatchEventKinds.ENTRY_CREATE;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.*;
-import static org.junit.Assert.*;
+import static org.mockito.Mockito.when;
 
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.logging.FileHandler;
 
 import org.cs27x.dropbox.DefaultFileManager;
 import org.cs27x.dropbox.Dropbox;
@@ -83,7 +83,7 @@ public class AnExampleUnitTest {
 		// Real objects can't tell the difference between our mock object
 		// and the real deal
 		DropboxFileEventHandler hdlr = new DropboxFileEventHandler(
-					new DefaultFileManager(TestData.CLIENT_DIR),
+				new DefaultFileManager(TestData.CLIENT_DIR),
 					new FileStates(),
 					transport);
 		
@@ -93,6 +93,8 @@ public class AnExampleUnitTest {
 		
 		// Make sure that transport made a call to our mock object
 		// like we expected
-		verify(transport,times(1)).addFile(eq(p));
+		//verify(transport,times(1)).addFile(eq(p));
+		Path absolutePath = Paths.get(TestData.CLIENT_DIR.toString(), p.toString());
+        verify(transport,times(1)).addFile(eq(absolutePath));
 	}
 }

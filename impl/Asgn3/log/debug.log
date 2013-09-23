@@ -1,0 +1,884 @@
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@1161a1d5
+--- MESSAGE LOGGED
+Setting ro project property: ant.project.invoked-targets -> main
+--- MESSAGE LOGGED
+Adding reference: eclipse.ant.targetVector
+--- MESSAGE LOGGED
+Build sequence for target(s) `main' is [check, deleteBuild, createBuild, makeJar, saveArgs, defaultJunit, serverClientJunitTest, main]
+--- MESSAGE LOGGED
+Complete build sequence is [check, deleteBuild, createBuild, makeJar, saveArgs, defaultJunit, serverClientJunitTest, main, ]
+>> TARGET STARTED -- check
+
+check:
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@38b4216d
+--- MESSAGE LOGGED
+[available] Found directory: build
+--- MESSAGE LOGGED
+Condition true; setting deldir to true
+--- MESSAGE LOGGED
+Setting project property: deldir -> true
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@38b4216d
+<< TARGET FINISHED -- check
+check:  duration 0 seconds
+>> TARGET STARTED -- deleteBuild
+
+deleteBuild:
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@6cf76647
+--- MESSAGE LOGGED
+fileset: Setup scanner in dir C:\Users\Li\workspace_4.3\Asgn3\build with patternSet{ includes: [**/*] excludes: [] }
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\hazelcast.xml
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\DefaultFileManager.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\Dropbox.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\DropboxCmd$OpCode.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\DropboxCmd.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\DropboxCmdProcessor.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\DropboxProtocol.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\DropboxTransport.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\DropboxTransportListener.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\FileManager.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\HazelcastTransport.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\test\AllTests.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\test\AnExampleUnitTest.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\test\DefaultFileManagerTest.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\test\DropboxCmdProcessorTest.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\test\FileStatesTest.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\test\TestData.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\filewatcher\DropboxFileEventHandler.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\filewatcher\FileEvent.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\filewatcher\FileEventHandler.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\filewatcher\FileReactor$Dispatcher.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\filewatcher\FileReactor.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\filewatcher\FileState.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\filewatcher\FileStates.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\test\AllTests.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\test\CreateFileTest.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\test\DeleteFileTest.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\test\DirTest.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\test\ModifyFileTest.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\util\Args.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\util\DropboxProcess.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\util\FileOperation.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\util\SaveArgs.class
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\util
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\test
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\filewatcher
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox\test
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x\dropbox
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org\cs27x
+--- MESSAGE LOGGED
+   [delete] Deleting C:\Users\Li\workspace_4.3\Asgn3\build\org
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@6cf76647
+<< TARGET FINISHED -- deleteBuild
+deleteBuild:  duration 0 seconds
+>> TARGET STARTED -- createBuild
+
+createBuild:
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@52c93509
+--- MESSAGE LOGGED
+    [mkdir] Skipping C:\Users\Li\workspace_4.3\Asgn3\build because it already exists.
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@52c93509
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@47978f4f
+--- MESSAGE LOGGED
+fileset: Setup scanner in dir C:\Users\Li\workspace_4.3\Asgn3\src with patternSet{ includes: [] excludes: [] }
+--- MESSAGE LOGGED
+    [javac] C:\Users\Li\workspace_4.3\Asgn3\src\hazelcast.xml skipped - don't know how to handle it
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\DefaultFileManager.java added as org\cs27x\dropbox\DefaultFileManager.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\Dropbox.java added as org\cs27x\dropbox\Dropbox.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\DropboxCmd.java added as org\cs27x\dropbox\DropboxCmd.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\DropboxCmdProcessor.java added as org\cs27x\dropbox\DropboxCmdProcessor.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\DropboxProtocol.java added as org\cs27x\dropbox\DropboxProtocol.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\DropboxTransport.java added as org\cs27x\dropbox\DropboxTransport.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\DropboxTransportListener.java added as org\cs27x\dropbox\DropboxTransportListener.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\FileManager.java added as org\cs27x\dropbox\FileManager.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\HazelcastTransport.java added as org\cs27x\dropbox\HazelcastTransport.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\test\AllTests.java added as org\cs27x\dropbox\test\AllTests.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\test\AnExampleUnitTest.java added as org\cs27x\dropbox\test\AnExampleUnitTest.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\test\DefaultFileManagerTest.java added as org\cs27x\dropbox\test\DefaultFileManagerTest.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\test\DropboxCmdProcessorTest.java added as org\cs27x\dropbox\test\DropboxCmdProcessorTest.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\test\FileStatesTest.java added as org\cs27x\dropbox\test\FileStatesTest.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\dropbox\test\TestData.java added as org\cs27x\dropbox\test\TestData.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\filewatcher\DropboxFileEventHandler.java added as org\cs27x\filewatcher\DropboxFileEventHandler.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\filewatcher\FileEvent.java added as org\cs27x\filewatcher\FileEvent.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\filewatcher\FileEventHandler.java added as org\cs27x\filewatcher\FileEventHandler.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\filewatcher\FileReactor.java added as org\cs27x\filewatcher\FileReactor.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\filewatcher\FileState.java added as org\cs27x\filewatcher\FileState.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\filewatcher\FileStates.java added as org\cs27x\filewatcher\FileStates.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\test\AllTests.java added as org\cs27x\test\AllTests.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\test\CreateFileTest.java added as org\cs27x\test\CreateFileTest.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\test\DeleteFileTest.java added as org\cs27x\test\DeleteFileTest.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\test\DirTest.java added as org\cs27x\test\DirTest.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\test\ModifyFileTest.java added as org\cs27x\test\ModifyFileTest.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\util\Args.java added as org\cs27x\util\Args.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\util\DropboxProcess.java added as org\cs27x\util\DropboxProcess.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\util\FileOperation.java added as org\cs27x\util\FileOperation.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] org\cs27x\util\SaveArgs.java added as org\cs27x\util\SaveArgs.class doesn't exist.
+--- MESSAGE LOGGED
+    [javac] Compiling 30 source files to C:\Users\Li\workspace_4.3\Asgn3\build
+--- MESSAGE LOGGED
+    [javac] Using modern compiler
+--- MESSAGE LOGGED
+    [javac] Compilation arguments:
+'-nowarn'
+'-d'
+'C:\Users\Li\workspace_4.3\Asgn3\build'
+'-classpath'
+'C:\Users\Li\workspace_4.3\Asgn3\build;C:\Users\Li\workspace_4.3\Asgn3\libs\commons-io-2.4.jar;C:\Users\Li\workspace_4.3\Asgn3\libs\guava-11.0.2.jar;C:\Users\Li\workspace_4.3\Asgn3\libs\hazelcast-all-2.3.1.jar;C:\Users\Li\workspace_4.3\Asgn3\libs\mockito-all-1.9.0.jar;C:\Users\Li\workspace_4.3\Asgn3\libs\junit-4.11.jar'
+'-sourcepath'
+'C:\Users\Li\workspace_4.3\Asgn3\src'
+'-g'
+
+The ' characters around the executable and arguments are
+not part of the command.
+--- MESSAGE LOGGED
+    [javac] Files to be compiled:
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\DefaultFileManager.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\Dropbox.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\DropboxCmd.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\DropboxCmdProcessor.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\DropboxProtocol.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\DropboxTransport.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\DropboxTransportListener.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\FileManager.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\HazelcastTransport.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\test\AllTests.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\test\AnExampleUnitTest.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\test\DefaultFileManagerTest.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\test\DropboxCmdProcessorTest.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\test\FileStatesTest.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\test\TestData.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\filewatcher\DropboxFileEventHandler.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\filewatcher\FileEvent.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\filewatcher\FileEventHandler.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\filewatcher\FileReactor.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\filewatcher\FileState.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\filewatcher\FileStates.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\test\AllTests.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\test\CreateFileTest.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\test\DeleteFileTest.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\test\DirTest.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\test\ModifyFileTest.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\util\Args.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\util\DropboxProcess.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\util\FileOperation.java
+    C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\util\SaveArgs.java
+--- MESSAGE LOGGED
+    [javac] Note: C:\Users\Li\workspace_4.3\Asgn3\src\org\cs27x\dropbox\HazelcastTransport.java uses or overrides a deprecated API.
+--- MESSAGE LOGGED
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@47978f4f
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@3b6f7d42
+--- MESSAGE LOGGED
+     [copy] C:\Users\Li\workspace_4.3\Asgn3\src\hazelcast.xml added as hazelcast.xml doesn't exist.
+--- MESSAGE LOGGED
+     [copy] No sources found.
+--- MESSAGE LOGGED
+     [copy] Copying 1 file to C:\Users\Li\workspace_4.3\Asgn3\build
+--- MESSAGE LOGGED
+     [copy] Copying C:\Users\Li\workspace_4.3\Asgn3\src\hazelcast.xml to C:\Users\Li\workspace_4.3\Asgn3\build\hazelcast.xml
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@3b6f7d42
+<< TARGET FINISHED -- createBuild
+createBuild:  duration 2 seconds
+>> TARGET STARTED -- makeJar
+
+makeJar:
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@11bed093
+--- MESSAGE LOGGED
+Adding reference: build-classpath
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@11bed093
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@1b0fa7ff
+--- MESSAGE LOGGED
+fileset: Setup scanner in dir C:\Users\Li\workspace_4.3\Asgn3\libs with patternSet{ includes: [commons-io-2.4.jar, guava-11.0.2.jar, hazelcast-all-2.3.1.jar, mockito-all-1.9.0.jar, junit-4.11.jar] excludes: [] }
+--- MESSAGE LOGGED
+Setting project property: lib.list -> libs/commons-io-2.4.jar libs/guava-11.0.2.jar libs/hazelcast-all-2.3.1.jar libs/junit-4.11.jar libs/mockito-all-1.9.0.jar
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@1b0fa7ff
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@4b7bf82a
+--- MESSAGE LOGGED
+fileset: Setup scanner in dir C:\Users\Li\workspace_4.3\Asgn3\build with patternSet{ includes: [] excludes: [] }
+--- MESSAGE LOGGED
+      [jar] hazelcast.xml added as hazelcast.xml is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\DefaultFileManager.class added as org/cs27x/dropbox/DefaultFileManager.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\Dropbox.class added as org/cs27x/dropbox/Dropbox.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\DropboxCmd$OpCode.class added as org/cs27x/dropbox/DropboxCmd$OpCode.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\DropboxCmd.class added as org/cs27x/dropbox/DropboxCmd.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\DropboxCmdProcessor.class added as org/cs27x/dropbox/DropboxCmdProcessor.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\DropboxProtocol.class added as org/cs27x/dropbox/DropboxProtocol.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\DropboxTransport.class added as org/cs27x/dropbox/DropboxTransport.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\DropboxTransportListener.class added as org/cs27x/dropbox/DropboxTransportListener.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\FileManager.class added as org/cs27x/dropbox/FileManager.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\HazelcastTransport.class added as org/cs27x/dropbox/HazelcastTransport.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\test\AllTests.class added as org/cs27x/dropbox/test/AllTests.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\test\AnExampleUnitTest.class added as org/cs27x/dropbox/test/AnExampleUnitTest.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\test\DefaultFileManagerTest.class added as org/cs27x/dropbox/test/DefaultFileManagerTest.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\test\DropboxCmdProcessorTest.class added as org/cs27x/dropbox/test/DropboxCmdProcessorTest.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\test\FileStatesTest.class added as org/cs27x/dropbox/test/FileStatesTest.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\test\TestData.class added as org/cs27x/dropbox/test/TestData.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\filewatcher\DropboxFileEventHandler.class added as org/cs27x/filewatcher/DropboxFileEventHandler.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\filewatcher\FileEvent.class added as org/cs27x/filewatcher/FileEvent.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\filewatcher\FileEventHandler.class added as org/cs27x/filewatcher/FileEventHandler.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\filewatcher\FileReactor$Dispatcher.class added as org/cs27x/filewatcher/FileReactor$Dispatcher.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\filewatcher\FileReactor.class added as org/cs27x/filewatcher/FileReactor.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\filewatcher\FileState.class added as org/cs27x/filewatcher/FileState.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\filewatcher\FileStates.class added as org/cs27x/filewatcher/FileStates.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\test\AllTests.class added as org/cs27x/test/AllTests.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\test\CreateFileTest.class added as org/cs27x/test/CreateFileTest.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\test\DeleteFileTest.class added as org/cs27x/test/DeleteFileTest.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\test\DirTest.class added as org/cs27x/test/DirTest.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\test\ModifyFileTest.class added as org/cs27x/test/ModifyFileTest.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\util\Args.class added as org/cs27x/util/Args.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\util\DropboxProcess.class added as org/cs27x/util/DropboxProcess.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\util\FileOperation.class added as org/cs27x/util/FileOperation.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\util\SaveArgs.class added as org/cs27x/util/SaveArgs.class is outdated.
+--- MESSAGE LOGGED
+      [jar] org omitted as C:\Users\Li\workspace_4.3\Asgn3\Dropbox.jar:org/ is up to date.
+--- MESSAGE LOGGED
+      [jar] org\cs27x omitted as C:\Users\Li\workspace_4.3\Asgn3\Dropbox.jar:org/cs27x/ is up to date.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox omitted as C:\Users\Li\workspace_4.3\Asgn3\Dropbox.jar:org/cs27x/dropbox/ is up to date.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\dropbox\test omitted as C:\Users\Li\workspace_4.3\Asgn3\Dropbox.jar:org/cs27x/dropbox/test/ is up to date.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\filewatcher omitted as C:\Users\Li\workspace_4.3\Asgn3\Dropbox.jar:org/cs27x/filewatcher/ is up to date.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\test omitted as C:\Users\Li\workspace_4.3\Asgn3\Dropbox.jar:org/cs27x/test/ is up to date.
+--- MESSAGE LOGGED
+      [jar] org\cs27x\util omitted as C:\Users\Li\workspace_4.3\Asgn3\Dropbox.jar:org/cs27x/util/ is up to date.
+--- MESSAGE LOGGED
+      [jar] Building jar: C:\Users\Li\workspace_4.3\Asgn3\Dropbox.jar
+--- MESSAGE LOGGED
+      [jar] adding directory META-INF/
+--- MESSAGE LOGGED
+      [jar] adding entry META-INF/MANIFEST.MF
+--- MESSAGE LOGGED
+      [jar] adding directory org/
+--- MESSAGE LOGGED
+      [jar] adding directory org/cs27x/
+--- MESSAGE LOGGED
+      [jar] adding directory org/cs27x/dropbox/
+--- MESSAGE LOGGED
+      [jar] adding directory org/cs27x/dropbox/test/
+--- MESSAGE LOGGED
+      [jar] adding directory org/cs27x/filewatcher/
+--- MESSAGE LOGGED
+      [jar] adding directory org/cs27x/test/
+--- MESSAGE LOGGED
+      [jar] adding directory org/cs27x/util/
+--- MESSAGE LOGGED
+      [jar] adding entry hazelcast.xml
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/DefaultFileManager.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/Dropbox.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/DropboxCmd$OpCode.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/DropboxCmd.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/DropboxCmdProcessor.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/DropboxProtocol.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/DropboxTransport.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/DropboxTransportListener.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/FileManager.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/HazelcastTransport.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/test/AllTests.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/test/AnExampleUnitTest.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/test/DefaultFileManagerTest.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/test/DropboxCmdProcessorTest.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/test/FileStatesTest.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/dropbox/test/TestData.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/filewatcher/DropboxFileEventHandler.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/filewatcher/FileEvent.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/filewatcher/FileEventHandler.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/filewatcher/FileReactor$Dispatcher.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/filewatcher/FileReactor.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/filewatcher/FileState.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/filewatcher/FileStates.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/test/AllTests.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/test/CreateFileTest.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/test/DeleteFileTest.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/test/DirTest.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/test/ModifyFileTest.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/util/Args.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/util/DropboxProcess.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/util/FileOperation.class
+--- MESSAGE LOGGED
+      [jar] adding entry org/cs27x/util/SaveArgs.class
+--- MESSAGE LOGGED
+      [jar] No Implementation-Title set.No Implementation-Version set.No Implementation-Vendor set.
+Location: C:\Users\Li\workspace_4.3\Asgn3\build.xml:58: 
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@4b7bf82a
+<< TARGET FINISHED -- makeJar
+makeJar:  duration 0 seconds
+>> TARGET STARTED -- saveArgs
+
+saveArgs:
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@175add68
+--- MESSAGE LOGGED
+     [java] Executing 'C:\Program Files\Java\jdk1.7.0_25\jre\bin\java.exe' with arguments:
+'-classpath'
+'C:\Users\Li\workspace_4.3\Asgn3\build;C:\Users\Li\workspace_4.3\Asgn3\libs\commons-io-2.4.jar'
+'org.cs27x.util.SaveArgs'
+'test-data/server/'
+'test-data/client/'
+
+The ' characters around the executable and arguments are
+not part of the command.
+--- MESSAGE LOGGED
+Execute:Java13CommandLauncher: Executing 'C:\Program Files\Java\jdk1.7.0_25\jre\bin\java.exe' with arguments:
+'-classpath'
+'C:\Users\Li\workspace_4.3\Asgn3\build;C:\Users\Li\workspace_4.3\Asgn3\libs\commons-io-2.4.jar'
+'org.cs27x.util.SaveArgs'
+'test-data/server/'
+'test-data/client/'
+
+The ' characters around the executable and arguments are
+not part of the command.
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@175add68
+<< TARGET FINISHED -- saveArgs
+saveArgs:  duration 0 seconds
+>> TARGET STARTED -- defaultJunit
+
+defaultJunit:
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@53959622
+--- MESSAGE LOGGED
+    [junit] Couldn't find junit/framework/TestCase.class
+--- MESSAGE LOGGED
+    [junit] Found C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-launcher.jar
+--- MESSAGE LOGGED
+    [junit] Found C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant.jar
+--- MESSAGE LOGGED
+    [junit] Found C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit.jar
+--- MESSAGE LOGGED
+    [junit] Found C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit4.jar
+--- MESSAGE LOGGED
+Finding class junit.framework.Test
+--- MESSAGE LOGGED
+Loaded from C:\Users\Li\workspace_4.3\Asgn3\libs\junit-4.11.jar junit/framework/Test.class
+--- MESSAGE LOGGED
+Class java.lang.Object loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class junit.framework.Test loaded from ant loader (parentFirst)
+--- MESSAGE LOGGED
+Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirrorImpl
+--- MESSAGE LOGGED
+Loaded from C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitTaskMirrorImpl.class
+--- MESSAGE LOGGED
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$SummaryJUnitResultFormatterMirror loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class java.lang.Throwable loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Finding class junit.framework.AssertionFailedError
+--- MESSAGE LOGGED
+Loaded from C:\Users\Li\workspace_4.3\Asgn3\libs\junit-4.11.jar junit/framework/AssertionFailedError.class
+--- MESSAGE LOGGED
+Class java.lang.AssertionError loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class junit.framework.AssertionFailedError loaded from ant loader (parentFirst)
+--- MESSAGE LOGGED
+Class java.lang.ClassLoader loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class org.apache.tools.ant.AntClassLoader loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$JUnitTestRunnerMirror loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTask loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+    [junit] Implicitly adding C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-launcher.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit4.jar to CLASSPATH
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+    [junit] Executing 'C:\Program Files\Java\jdk1.7.0_25\jre\bin\java.exe' with arguments:
+'-classpath'
+'C:\Users\Li\workspace_4.3\Asgn3\Dropbox.jar;C:\Users\Li\workspace_4.3\Asgn3;C:\Program2\JMF21~1.1E\lib\sound.jar;C:\Program2\JMF21~1.1E\lib\jmf.jar;C:\Program2\JMF21~1.1E\lib;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-launcher.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit4.jar'
+'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner'
+'org.cs27x.dropbox.test.AllTests'
+'filtertrace=true'
+'haltOnError=false'
+'haltOnFailure=false'
+'formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter'
+'showoutput=true'
+'outputtoformatters=true'
+'logfailedtests=true'
+'logtestlistenerevents=true'
+'crashfile=C:\Users\Li\workspace_4.3\Asgn3\junitvmwatcher6191361208074224872.properties'
+'propsfile=C:\Users\Li\workspace_4.3\Asgn3\junit8807451281999321831.properties'
+
+The ' characters around the executable and arguments are
+not part of the command.
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+Execute:Java13CommandLauncher: Executing 'C:\Program Files\Java\jdk1.7.0_25\jre\bin\java.exe' with arguments:
+'-classpath'
+'C:\Users\Li\workspace_4.3\Asgn3\Dropbox.jar;C:\Users\Li\workspace_4.3\Asgn3;C:\Program2\JMF21~1.1E\lib\sound.jar;C:\Program2\JMF21~1.1E\lib\jmf.jar;C:\Program2\JMF21~1.1E\lib;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-launcher.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit4.jar'
+'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner'
+'org.cs27x.dropbox.test.AllTests'
+'filtertrace=true'
+'haltOnError=false'
+'haltOnFailure=false'
+'formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter'
+'showoutput=true'
+'outputtoformatters=true'
+'logfailedtests=true'
+'logtestlistenerevents=true'
+'crashfile=C:\Users\Li\workspace_4.3\Asgn3\junitvmwatcher6191361208074224872.properties'
+'propsfile=C:\Users\Li\workspace_4.3\Asgn3\junit8807451281999321831.properties'
+
+The ' characters around the executable and arguments are
+not part of the command.
+--- MESSAGE LOGGED
+    [junit] Running org.cs27x.dropbox.test.AllTests
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: tests to run: 10
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(testWrite)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(testWrite)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(testDelete)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(testDelete)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(testExists)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(testExists)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(aBadTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(aBadTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(aBadTestWithAMockObject)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(aBadTestWithAMockObject)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(testAdd)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(testAdd)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(testRemove)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(testRemove)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(testUpdate)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(testUpdate)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(testFilter)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(testFilter)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(testInsert)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(testInsert)
+--- MESSAGE LOGGED
+    [junit] Tests run: 10, Failures: 0, Errors: 0, Time elapsed: 0.684 sec
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@53959622
+<< TARGET FINISHED -- defaultJunit
+defaultJunit:  duration 1 second
+>> TARGET STARTED -- serverClientJunitTest
+
+serverClientJunitTest:
+>>> TASK STARTED -- org.apache.tools.ant.UnknownElement@75225918
+--- MESSAGE LOGGED
+    [junit] Couldn't find junit/framework/TestCase.class
+--- MESSAGE LOGGED
+    [junit] Found C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-launcher.jar
+--- MESSAGE LOGGED
+    [junit] Found C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant.jar
+--- MESSAGE LOGGED
+    [junit] Found C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit.jar
+--- MESSAGE LOGGED
+    [junit] Found C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit4.jar
+--- MESSAGE LOGGED
+Finding class junit.framework.Test
+--- MESSAGE LOGGED
+Loaded from C:\Users\Li\workspace_4.3\Asgn3\libs\junit-4.11.jar junit/framework/Test.class
+--- MESSAGE LOGGED
+Class java.lang.Object loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class junit.framework.Test loaded from ant loader (parentFirst)
+--- MESSAGE LOGGED
+Finding class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirrorImpl
+--- MESSAGE LOGGED
+Loaded from C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit.jar org/apache/tools/ant/taskdefs/optional/junit/JUnitTaskMirrorImpl.class
+--- MESSAGE LOGGED
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$SummaryJUnitResultFormatterMirror loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class java.lang.Throwable loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Finding class junit.framework.AssertionFailedError
+--- MESSAGE LOGGED
+Loaded from C:\Users\Li\workspace_4.3\Asgn3\libs\junit-4.11.jar junit/framework/AssertionFailedError.class
+--- MESSAGE LOGGED
+Class java.lang.AssertionError loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class junit.framework.AssertionFailedError loaded from ant loader (parentFirst)
+--- MESSAGE LOGGED
+Class java.lang.ClassLoader loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class org.apache.tools.ant.AntClassLoader loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTaskMirror$JUnitTestRunnerMirror loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+Class org.apache.tools.ant.taskdefs.optional.junit.JUnitTask loaded from parent loader (parentFirst)
+--- MESSAGE LOGGED
+    [junit] Implicitly adding C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-launcher.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit4.jar to CLASSPATH
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+    [junit] Executing 'C:\Program Files\Java\jdk1.7.0_25\jre\bin\java.exe' with arguments:
+'-classpath'
+'C:\Users\Li\workspace_4.3\Asgn3\Dropbox.jar;C:\Users\Li\workspace_4.3\Asgn3;C:\Program2\JMF21~1.1E\lib\sound.jar;C:\Program2\JMF21~1.1E\lib\jmf.jar;C:\Program2\JMF21~1.1E\lib;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-launcher.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit4.jar'
+'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner'
+'org.cs27x.test.AllTests'
+'filtertrace=true'
+'haltOnError=false'
+'haltOnFailure=false'
+'formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter'
+'showoutput=true'
+'outputtoformatters=true'
+'logfailedtests=true'
+'logtestlistenerevents=true'
+'crashfile=C:\Users\Li\workspace_4.3\Asgn3\junitvmwatcher599120411825015474.properties'
+'propsfile=C:\Users\Li\workspace_4.3\Asgn3\junit8625327177305170729.properties'
+
+The ' characters around the executable and arguments are
+not part of the command.
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\Program\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\sound.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib\jmf.jar from path as it doesn't exist
+--- MESSAGE LOGGED
+dropping C:\PROGRA~2\JMF21~1.1E\lib from path as it doesn't exist
+--- MESSAGE LOGGED
+Execute:Java13CommandLauncher: Executing 'C:\Program Files\Java\jdk1.7.0_25\jre\bin\java.exe' with arguments:
+'-classpath'
+'C:\Users\Li\workspace_4.3\Asgn3\Dropbox.jar;C:\Users\Li\workspace_4.3\Asgn3;C:\Program2\JMF21~1.1E\lib\sound.jar;C:\Program2\JMF21~1.1E\lib\jmf.jar;C:\Program2\JMF21~1.1E\lib;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-launcher.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit.jar;C:\Vandy\Tools\eclipse_4.3\plugins\org.apache.ant_1.8.4.v201303080030\lib\ant-junit4.jar'
+'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner'
+'org.cs27x.test.AllTests'
+'filtertrace=true'
+'haltOnError=false'
+'haltOnFailure=false'
+'formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter'
+'showoutput=true'
+'outputtoformatters=true'
+'logfailedtests=true'
+'logtestlistenerevents=true'
+'crashfile=C:\Users\Li\workspace_4.3\Asgn3\junitvmwatcher599120411825015474.properties'
+'propsfile=C:\Users\Li\workspace_4.3\Asgn3\junit8625327177305170729.properties'
+
+The ' characters around the executable and arguments are
+not part of the command.
+--- MESSAGE LOGGED
+    [junit] Running org.cs27x.test.AllTests
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: tests to run: 7
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(mixCreateTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(mixCreateTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(serverCreateTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(serverCreateTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(clientCreateTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(clientCreateTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(modifyNameTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(modifyNameTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(modifyContentTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(modifyContentTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(deleteTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(deleteTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: startTest(dirTest)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: addFailure(dirTest, new file is not directory)
+--- MESSAGE LOGGED
+    [junit] junit.framework.TestListener: endTest(dirTest)
+--- MESSAGE LOGGED
+    [junit] Tests run: 7, Failures: 1, Errors: 0, Time elapsed: 114.428 sec
+--- MESSAGE LOGGED
+    [junit] Test org.cs27x.test.AllTests FAILED
+<<< TASK FINISHED -- org.apache.tools.ant.UnknownElement@75225918
+<< TARGET FINISHED -- serverClientJunitTest
+serverClientJunitTest:  duration 1 minute 55 seconds
+>> TARGET STARTED -- main
+
+main:
+<< TARGET FINISHED -- main
+main:  duration 0 seconds
+--- MESSAGE LOGGED
+BUILD SUCCESSFUL
+< BUILD FINISHED
+
+BUILD SUCCESSFUL

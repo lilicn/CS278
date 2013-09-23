@@ -1,13 +1,16 @@
 package org.cs27x.dropbox.test;
 
-import static org.mockito.Mockito.*;
-import static org.junit.Assert.*;
-import static org.cs27x.dropbox.test.TestData.*;
+import static org.cs27x.dropbox.test.TestData.TEST_FILE;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 import org.cs27x.dropbox.DropboxCmd;
 import org.cs27x.dropbox.DropboxCmd.OpCode;

@@ -20,7 +20,7 @@ public class HazelcastTransport implements DropboxTransport,
 	private static final String DEFAULT_TOPIC = "default";
 
 	private ITopic<DropboxCmd> topic_;
-	
+
 	private boolean connected_ = false;
 
 	private List<DropboxTransportListener> listeners_ = new ArrayList<>(1);
@@ -46,23 +46,23 @@ public class HazelcastTransport implements DropboxTransport,
 		cluster.addMembershipListener(this);
 		topic_ = Hazelcast.getTopic(DEFAULT_TOPIC);
 		topic_.addMessageListener(this);
-	
+
 		checkConnected();
 	}
-	
-	public void disconnect(){
+
+	public void disconnect() {
 		Hazelcast.shutdown();
 	}
 
-	private void checkConnected(){
+	private void checkConnected() {
 		Cluster cluster = Hazelcast.getCluster();
-		if(cluster.getMembers().size() > 1 && !connected_){
+		if (cluster.getMembers().size() > 1 && !connected_) {
 			connected();
-		} else if(connected_){
+		} else if (connected_) {
 			disconnected();
 		}
 	}
-	
+
 	@Override
 	public void memberAdded(MembershipEvent arg0) {
 		checkConnected();
@@ -72,18 +72,18 @@ public class HazelcastTransport implements DropboxTransport,
 	public void memberRemoved(MembershipEvent arg0) {
 		checkConnected();
 	}
-	
-	public synchronized void connected(){
+
+	public synchronized void connected() {
 		connected_ = true;
-		for(DropboxTransportListener l : listeners_){
+		for (DropboxTransportListener l : listeners_) {
 			l.connected(this);
 		}
 		notifyAll();
 	}
-	
-	public synchronized void disconnected(){
+
+	public synchronized void disconnected() {
 		connected_ = false;
-		for(DropboxTransportListener l : listeners_){
+		for (DropboxTransportListener l : listeners_) {
 			l.disconnected(this);
 		}
 		notifyAll();
@@ -108,12 +108,13 @@ public class HazelcastTransport implements DropboxTransport,
 	public boolean isConnected() {
 		return connected_;
 	}
-	
-	public synchronized void awaitConnect(long timeout) throws InterruptedException {
-		if(!connected_){
-			if(timeout > 0){
+
+	public synchronized void awaitConnect(long timeout)
+			throws InterruptedException {
+		if (!connected_) {
+			if (timeout > 0) {
 				wait(timeout);
-			}else {
+			} else {
 				wait();
 			}
 		}

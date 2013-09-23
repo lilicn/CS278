@@ -1,19 +1,32 @@
 package org.cs27x.dropbox.test;
 
+import static org.cs27x.dropbox.test.TestData.TEST_FILE;
+import static org.cs27x.dropbox.test.TestData.TEST_FILE2;
+import static org.cs27x.dropbox.test.TestData.TEST_WORKING_DIR;
+import static org.junit.Assert.assertTrue;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.UUID;
 
-import static org.junit.Assert.*;
-import static org.cs27x.dropbox.test.TestData.*;
-
+import org.apache.commons.io.FileUtils;
 import org.cs27x.dropbox.DefaultFileManager;
+import org.junit.AfterClass;
+import org.junit.BeforeClass;
 import org.junit.Test;
 
 public class DefaultFileManagerTest {
 
+	@BeforeClass
+    public static void setUp() throws IOException {
+        Path dir = Paths.get(TEST_WORKING_DIR);
+        if (!Files.exists(dir)) {
+            Files.createDirectory(dir);
+        }
+    }
+	
 	@Test
 	public void testDelete() throws Exception {
 		
@@ -116,5 +129,13 @@ public class DefaultFileManagerTest {
 
 		return same;
 	}
+	
+	@AfterClass
+    public static void clean() throws IOException {
+        Path dir = Paths.get(TEST_WORKING_DIR);
+        if (Files.exists(dir)) {
+            FileUtils.deleteDirectory(dir.toFile());
+        }
+    }
 
 }

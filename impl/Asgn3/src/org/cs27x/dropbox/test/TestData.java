@@ -1,8 +1,5 @@
 package org.cs27x.dropbox.test;
 
-import static org.cs27x.dropbox.test.TestData.CLIENT_DIR;
-import static org.cs27x.dropbox.test.TestData.SERVER_DIR;
-
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
