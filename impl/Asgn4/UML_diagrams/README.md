@@ -2,9 +2,9 @@ UML diagrams for Guice
 =====================
 Background
 -------------
-Framework: Guice
-Website: https://code.google.com/p/google-guice/
-Get Source code: git clone https://code.google.com/p/google-guice/
+- Framework: Guice
+- Website: https://code.google.com/p/google-guice/
+- Get Source code: git clone https://code.google.com/p/google-guice/
 
 What
 -----
