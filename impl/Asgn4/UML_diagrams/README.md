@@ -21,12 +21,12 @@ Why
 Just as what is illustrated in the official website, the biggest advantage of Guice is that it alleviates 
 the need for factories and the use of new in Java code. It is conductive to reuse and change the code, and
 unit test. Some other advantages are followed:
-1. The use of annotation and generics make it clean, lightweight and easy to use.
-2. It can inject constructors, fields and methods. 
-3. Scopes allow us to reuse instances for specific scope.
-4. The dependency injection pattern separates behaviour from dependency resolution, and make codes loose coupled.
-5. It supports Aspect Oriented Programming (AOP) method interception.
-6. Strong extensions.
+- The use of annotation and generics make it clean, lightweight and easy to use.
+- It can inject constructors, fields and methods. 
+- Scopes allow us to reuse instances for specific scope.
+- The dependency injection pattern separates behaviour from dependency resolution, and make codes loose coupled.
+- It supports Aspect Oriented Programming (AOP) method interception.
+- Strong extensions.
 
 
 
