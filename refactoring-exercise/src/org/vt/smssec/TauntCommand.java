@@ -25,7 +25,7 @@ import android.preference.PreferenceManager;
 import android.util.Log;
 import android.widget.Toast;
 
-public class TauntCommand  {
+public class TauntCommand implements Command{
 
 	private static final String TAG = "TauntCommand";
 	private static final int REQUEST_CODE = 12341234;
@@ -33,6 +33,8 @@ public class TauntCommand  {
 	private String msg_;
 	private int time_;
 
+	public TauntCommand(){}
+	
 	public TauntCommand(Context ctx, String msg, int time) {
 		context_ = ctx;
 		msg_ = msg;
@@ -80,6 +82,16 @@ public class TauntCommand  {
 
 			}
 		}
+	}
+
+	@Override
+	public void execute(Object... objs) {
+		context_= (Context) objs[0];
+		String cmd = (String) objs[1];
+		msg_ = Util.getMSG(cmd);
+		time_ = Toast.LENGTH_LONG;
+
+		sendTaunt();
 	}
 
 }

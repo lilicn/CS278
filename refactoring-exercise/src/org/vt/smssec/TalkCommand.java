@@ -16,59 +16,61 @@ package org.vt.smssec;
 import java.util.HashMap;
 
 import android.content.Context;
-import android.content.Intent;
 import android.media.AudioManager;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.TextToSpeech.OnInitListener;
+import android.util.Log;
 
-public class TalkCommand implements OnInitListener{
+public class TalkCommand implements OnInitListener, Command {
 
 	/**
-	 * Example: cmd:say: "Your name has been sent to the police, you will rot in jail"
+	 * Example: cmd:say:
+	 * "Your name has been sent to the police, you will rot in jail"
 	 */
-	
+
 	private Context context_;
 	private TextToSpeech textToSpeech_;
-	private boolean ready_ = false;
-	private boolean pendingExec_ = false;
 	private String message_;
-	
+	private final static String TAG = "TalkCommand";
+
+	public TalkCommand() {
+	}
+
 	public TalkCommand(Context ctx, String msg) {
 		context_ = ctx;
 		message_ = msg;
-		
-		textToSpeech_ = new TextToSpeech(ctx,this);
+		textToSpeech_ = new TextToSpeech(ctx, this);
 	}
 
 	@Override
-	public void onInit(int arg0) {
-		ready_ = true;
-		if(pendingExec_){
+	public void onInit(int status) {
+		if (status == TextToSpeech.SUCCESS) {
 			talk();
-			pendingExec_ = false;
+		} else {
+			Log.e(TAG, "TTS Initilization Failed!");
 		}
 	}
 
-	public void speak() {
-		if(ready_){
-			talk();
-		}
-		else {
-			pendingExec_ = true;
+	public void talk() {
+		HashMap<String, String> myHashAlarm = new HashMap<String, String>();
+		myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_STREAM,
+				String.valueOf(AudioManager.STREAM_ALARM));
+		textToSpeech_.speak(message_, TextToSpeech.QUEUE_ADD, myHashAlarm);
+
+		try {
+			Thread.currentThread().sleep(3000);
+		} catch (Exception e) {
+			Log.e(TAG, e.toString() + ": " + e.getMessage());
 		}
 	}
-	
-	public void talk(){
-		HashMap<String, String> myHashAlarm = new HashMap();
-		myHashAlarm.put(TextToSpeech.Engine.KEY_PARAM_STREAM,
-		        String.valueOf(AudioManager.STREAM_ALARM));
-		textToSpeech_.speak(message_, TextToSpeech.QUEUE_ADD, myHashAlarm);
-		
-		try{
-			Thread.currentThread().sleep(3000);
-		}catch (Exception e) {
-			// TODO: handle exception
-		}
+
+	@Override
+	public void execute(Object... objs) {
+		context_ = (Context) objs[0];
+		String cmd = (String) objs[1];
+		message_ = Util.getMSG(cmd);
+		textToSpeech_ = new TextToSpeech(context_, this);
+		talk();
 	}
 
 }

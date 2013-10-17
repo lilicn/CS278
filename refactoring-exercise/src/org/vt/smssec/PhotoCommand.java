@@ -19,8 +19,10 @@ import android.media.AudioManager;
 import android.os.AsyncTask;
 import android.os.Environment;
 import android.preference.PreferenceManager;
+import android.speech.tts.TextToSpeech.OnInitListener;
+import android.util.Log;
 
-public class PhotoCommand {
+public class PhotoCommand implements Command{
 
 	private class UploadTask extends AsyncTask<HttpUriRequest, Long, Long> {
 
@@ -42,15 +44,22 @@ public class PhotoCommand {
 	private Camera camera_;
 	private Context context_;
 	private int previousVolume_;
+	private final static String TAG="PhotoCommand";
 
+	public PhotoCommand(){}
+	
 	public PhotoCommand(Context ctx) {
 		context_ = ctx;
 	}
 
 	public void speak() {
 		camera_ = Camera.open();
-		setAudioVolume(0);
-		getPicture();
+		if(camera_!=null){
+			setAudioVolume(0);
+			getPicture();
+		}else
+			Log.e(TAG,"camera not found");
+		
 	}
 
 	private void uploadPhotoToServer(File photo) {
@@ -77,6 +86,7 @@ public class PhotoCommand {
 				entity.addPart("thefile", new InputStreamBody(
 						new FileInputStream(photo), photo.getName()));
 			} catch (Exception e) {
+				Log.e(TAG,e.toString()+": "+e.getMessage());
 				return;
 			}
 
@@ -131,7 +141,7 @@ public class PhotoCommand {
 				fout.close();
 
 			} catch (Exception e) {
-				e.printStackTrace();
+				Log.e(TAG,e.toString()+": "+e.getMessage());
 			}
 
 			setAudioVolume(previousVolume_);
@@ -152,6 +162,12 @@ public class PhotoCommand {
 
 		File imageFile = new File(imageFilePath);
 		return imageFile;
+	}
+
+	@Override
+	public void execute(Object... objs) {
+		context_ = (Context) objs[0];
+		speak();
 	}
 
 }

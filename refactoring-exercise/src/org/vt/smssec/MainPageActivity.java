@@ -15,11 +15,13 @@ package org.vt.smssec;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
 public class MainPageActivity extends Activity {
+	private SMSReceiver receiver = new SMSReceiver();
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +30,7 @@ public class MainPageActivity extends Activity {
 
 		setContentView(R.layout.main);
 
-		Button b = (Button)findViewById(R.id.Button01);
+		Button b = (Button) findViewById(R.id.Button01);
 		b.setOnClickListener(new View.OnClickListener() {
 
 			@Override
@@ -39,6 +41,13 @@ public class MainPageActivity extends Activity {
 			}
 		});
 
+		IntentFilter filter = new IntentFilter();
+		filter.addAction("android.provider.Telephony.SMS_RECEIVED");
+		registerReceiver(receiver, filter);
 	}
 
+	@Override
+	public void onDestroy() {
+		unregisterReceiver(receiver);
+	}
 }
