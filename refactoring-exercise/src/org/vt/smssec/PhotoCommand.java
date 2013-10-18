@@ -165,8 +165,8 @@ public class PhotoCommand implements Command{
 	}
 
 	@Override
-	public void execute(Object... objs) {
-		context_ = (Context) objs[0];
+	public void execute(Context cxt, Object... objs) {
+		context_ = cxt;
 		speak();
 	}
 
