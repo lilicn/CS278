@@ -34,7 +34,7 @@ public class SMSReceiver extends BroadcastReceiver {
 	private static final String ENABLE_SMS_SEC = "EnableSMSSec";
 	private static final String CMD = "cmd:";
 	private static final String MESSAGES = "pdus";
-	private Module configuration_;
+	private Module<Command> configuration_;
 	private final static String TAG = "SMSSec";
 
 	@Override
@@ -87,7 +87,7 @@ public class SMSReceiver extends BroadcastReceiver {
 			for (String cmd : cmds) {
 				try {
 					String cmdType = getCMDType(cmd);
-					Command command = (Command) configuration_
+					Command command = configuration_
 							.getInstance(cmdType);
 					if (command != null)
 						command.execute(context, cmd);
