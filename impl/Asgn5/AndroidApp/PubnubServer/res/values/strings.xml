@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PubnubServer</string>
+    <string name="pubnub">Pubnub</string>
+    <string name="menu_settings">Settings</string>
+    <string name="welcome">Welcome to the Pubnub Server</string>
+    <string name="hint">Enter color value to publish: </string>
+    <string name="textview">TextView</string>
+    <string name="publish">Publish</string>
+    <string name="hintInt">0 -\ 255</string>
+    <string name="num">255</string>
+    <string name="red">Red:</string>
+    <string name="green">Green:</string>
+    <string name="blue">Blue:</string>
+
+</resources>

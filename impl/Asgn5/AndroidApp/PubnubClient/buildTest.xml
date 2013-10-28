@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<project name="PubnubClient" basedir="." default="main">
+	<property name="jar" value="PubnubClient.jar" />
+	
+	<!-- save log into files -->
+	<record name="log/buildTest-records-simple.log" />
+	<record name="log/buildTest-ISO.log" loglevel="verbose" />
+	<record name="log/buildTest-debug.log" loglevel="debug" />
+	
+	
+
+
+	<!-- dafault junit test suit -->
+	<target name="JunitTest" >
+		<junit printsummary="yes" fork="yes" haltonfailure="no" showoutput="yes" enableTestListenerEvents="yes">
+			<test name="edu.vanderbilt.cs278.lili.pubnubclient.test.MyExecutorFactoryTest" />
+			<classpath>
+				<pathelement location="${jar}" />
+			</classpath>
+		</junit>
+	</target>
+
+	<target name="main" depends="JunitTest" />
+
+</project>
