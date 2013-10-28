@@ -20,7 +20,7 @@ Vagrant
 - You can run them in AVD via Eclipse or in your Android phone.
 
 
-Android integration test
+Test with Android test framework
 -------------------------
 - PubnubClientTest
 - need to run in Eclipse
