@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<project name="PubnubServer" basedir="." default="main">
+	<property name="jar" value="PubnubServer.jar" />
+	
+	<!-- save log into files -->
+	<record name="log/buildTest-records-simple.log" />
+	<record name="log/buildTest-ISO.log" loglevel="verbose" />
+	<record name="log/buildTest-debug.log" loglevel="debug" />
+	
+	<!-- junit test -->
+	<target name="JunitTest">
+		<junit printsummary="yes" fork="yes" haltonfailure="no" showoutput="yes" enableTestListenerEvents="yes">
+			<test name="edu.vanderbilt.cs278.lili.pubnubserver.test.ColorMsgTest" />
+			<classpath>
+				<pathelement location="${jar}" />
+			</classpath>
+		</junit>
+	</target>
+	
+	<!-- main -->
+	<target name="main" depends="JunitTest" />
+	</project>

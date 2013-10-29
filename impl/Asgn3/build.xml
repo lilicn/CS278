@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<project name="Asgn3" basedir="." default="main">
+	<property name="src" value="src/" />
+	<property name="build" value="build/" />
+	<property name="libs" value="libs/" />
+	<property name="jar" value="Dropbox.jar" />
+	<property name="classes" value="bin/" />
+	<property name="arg0" value="test-data/server/"/>
+	<property name="arg1" value = "test-data/client/"/>
+	
+	<!-- save log into files -->
+	<record name="log/records-simple.log" />
+	<record name="log/ISO.log" loglevel="verbose" />
+	<record name="log/debug.log" loglevel="debug" />
+	
+	<!-- check if build directory exists -->
+	<target name="check">
+		<condition property="deldir">
+			<available file="${build}" type="dir" />
+		</condition>
+	</target>
+
+	<!-- Delete build directory -->
+	<target name="deleteBuild" depends="check" if="deldir">
+		<delete includeemptydirs="true">
+			<fileset dir="${build}" includes="**/*" />
+		</delete>
+	</target>
+
+	<!-- create a build directory -->
+	<target name="createBuild" depends="deleteBuild">
+		<mkdir dir="${build}" />
+		<javac
+			classpath="${libs}/commons-io-2.4.jar:${libs}/guava-11.0.2.jar:${libs}/hazelcast-all-2.3.1.jar:${libs}/mockito-all-1.9.0.jar:${libs}/junit-4.11.jar"
+			destdir="${build}" includeantruntime="false" srcdir="${src}"
+			compiler="javac1.7" debug="on" nowarn="yes" />
+		<copy todir="${build}" flatten="true">
+			<resources>
+				<file file="${src}/hazelcast.xml" />
+			</resources>
+		</copy>
+	</target>
+
+	<!-- make Dropbox.jar -->
+	<target name="makeJar" depends="createBuild">
+		<path id="build-classpath">
+			<fileset dir="${libs}">
+				<include name="commons-io-2.4.jar" />
+				<include name="guava-11.0.2.jar" />
+				<include name="hazelcast-all-2.3.1.jar" />
+				<include name="mockito-all-1.9.0.jar" />
+				<include name="junit-4.11.jar" />
+			</fileset>
+		</path>
+		<manifestclasspath property="lib.list" jarfile="${jar}">
+			<classpath refid="build-classpath" />
+		</manifestclasspath>
+		<jar jarfile="${jar}" basedir="${build}">
+			<manifest>
+				<attribute name="Class-Path" value="${lib.list}" />
+				<attribute name="Main-Class" value="org.cs27x.dropbox.Dropbox" />
+			</manifest>
+		</jar>
+	</target>
+
+	<!-- save arguments - server directory and client directory - into a file -->
+	<target name="saveArgs" depends="makeJar">
+		<java fork="true" classname="org.cs27x.util.SaveArgs" classpath="${build}:${libs}/commons-io-2.4.jar">
+			<arg value="${arg0}" />
+			<arg value="${arg1}" />
+		</java>
+	</target>
+
+	<!-- dafault junit test suit -->
+	<target name="defaultJunit" depends="saveArgs">
+		<junit printsummary="yes" fork="yes" haltonfailure="no" showoutput="yes" enableTestListenerEvents="yes">
+			<test name="org.cs27x.dropbox.test.AllTests" />
+			<classpath>
+				<pathelement location="${jar}" />
+			</classpath>
+		</junit>
+	</target>
+	
+	<!-- file system junit test suit -->
+	<target name="serverClientJunitTest" depends="defaultJunit">
+		<junit printsummary="yes" fork="yes" haltonfailure="no" showoutput="yes" enableTestListenerEvents="yes">
+			<test name="org.cs27x.test.AllTests" />
+			<classpath>
+				<pathelement location="${jar}" />
+			</classpath>
+		</junit>
+	</target>
+
+	<!-- main -->
+	<target name="main" depends="serverClientJunitTest" />
+
+</project>
