@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
 
-# update
-sudo apt-get update
+set -e
 
-# install packages
-sudo apt-get install openjdk-7-jdk -y
-sudo apt-get install ant -y
+cd /vagrant/PubnubServerForVagrant/ && ant
 
-# copy project
-cp -a /vagrant/AndroidApp/ /home/vagrant/
+# java -jar PubnubServerForVagrant.jar
 
 
 

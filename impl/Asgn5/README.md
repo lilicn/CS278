@@ -4,15 +4,18 @@ Assignment 5
 PubnubClient / PubnubServer
 ----------------------------
 This project contains two Android Apps - PubnubClient and PubnubServer via PubNub Real-Time Network.
+It also has a java server which can automatically run in Vagrant VM.
 The most perfect scenario for this App is in large events such as concert, sports competition and so on, 
 where tens of thousands of people subscribe the same channel via their phones. Once a controller publishes 
 one command to the channel, tens of thousands of phones will change their appearance at the same time.
 
 
+
 Vagrant
 ---------
-- Use 'Vagrant up' to open the VM
+- Use 'Vagrant up' to open the VM, it will install all required package and build PubnubServerForVagrant automatically 
 - Use 'Vagrant ssh' to enter into the VM
+- Use 'cd /home/vagrant/PubnubServerForVagrant/ && java -jar PubnubServerForVagrant.jar' to run a command line server
 - Use 'cd /home/vagrant/AndroidApp/PubnubClient/ && ant -f buildTest.xml' to test PubnubClient
 - Use 'cd /home/vagrant/AndroidApp/PubnubServer/ && ant -f buildTest.xml' to test PubnubServer
 - Use 'Vagrant destroy' to kill the VM
@@ -25,7 +28,7 @@ Test with Android test framework
 - PubnubClientTest
 - need to run in Eclipse
 
-Command line 
+Useful Command line 
 -------------
 - android update project --name client -p . --target android-18
 - ant clean debug
