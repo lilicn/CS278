@@ -2,8 +2,12 @@ package edu.vanderbilt.cs278.lili.pubnubclient;
 
 import java.util.Hashtable;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -40,6 +44,8 @@ public class MainActivity extends Activity {
 	// factory to provide specific executor instance, now it provides only
 	// ColorExecutor
 	private ExecutorFactory factory = new MyExecutorFactory();
+	private final static String COLORKEY = "BACKGROUNDCOLOR";
+	private SavedState state = new SavedState();
 
 	/**
 	 * Static Handler used in UI thread to handle message received from channel
@@ -51,10 +57,12 @@ public class MainActivity extends Activity {
 		private RelativeLayout layout;
 		private ExecutorFactory factory;
 		private String TAG = this.getClass().getSimpleName();
+		private SavedState state;
 
-		public MyHandler(RelativeLayout layout, ExecutorFactory factory) {
+		public MyHandler(RelativeLayout layout, ExecutorFactory factory, SavedState state) {
 			this.layout = layout;
 			this.factory = factory;
+			this.state = state;
 		}
 
 		/**
@@ -65,9 +73,10 @@ public class MainActivity extends Activity {
 		public void handleMessage(Message msg) {
 			Msg m = new Msg((String) msg.obj);
 			Log.d(TAG, "handleMessage");
-			if (factory.isValidType(m.getType())) {
-				Log.d(TAG, m.getType());
-				factory.getExecByType(m.getType()).exector(m.getBody(), layout);
+			String msgType = m.getType();
+			if (factory.isValidType(msgType)){			
+				Log.d(TAG, msgType);
+				factory.getExecByType(msgType).exector(m.getBody(), layout, state);
 			} else {
 				Log.e(TAG, "Received message is not valid type");
 			}
@@ -82,7 +91,11 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.usage);
 		this.layout = (RelativeLayout) findViewById(R.id.layout);
-		this.handler = new MyHandler(layout, factory);
+		this.handler = new MyHandler(layout, factory,state);
+		
+		if(savedInstanceState!=null){
+			this.layout.setBackgroundColor(savedInstanceState.getInt(COLORKEY));
+		}	
 	}
 
 	/**
@@ -105,6 +118,7 @@ public class MainActivity extends Activity {
 	public void onPause(){
 		super.onPause();
 		runUnSubscribe();
+		handler = null;
 	}
 	/**
 	 * Override method for onOptionsItemSelected
@@ -124,6 +138,13 @@ public class MainActivity extends Activity {
 		}
 	}
 
+	@SuppressLint("NewApi")
+	@Override
+	protected  void onSaveInstanceState(Bundle savedInstanceState){
+		super.onSaveInstanceState(savedInstanceState);
+		Log.d(TAG,"saveColor"+state.getColorState());
+		savedInstanceState.putInt(COLORKEY, state.getColorState());
+	}
 	/**
 	 * runSubscribe will subscribe our channel via subnub when use choose
 	 * subOption in Menu. It will let the handler to handle the received message

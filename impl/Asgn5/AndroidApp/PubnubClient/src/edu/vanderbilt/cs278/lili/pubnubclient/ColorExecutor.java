@@ -26,10 +26,11 @@ public class ColorExecutor implements Executor<Integer> {
 	 * set the background color of layout to the integer - body
 	 */
 	@Override
-	public void exector(String body, RelativeLayout layout) {
+	public void exector(String body, RelativeLayout layout, SavedState state) {
 		this.body = body;
 		if (isValid())
 			layout.setBackgroundColor(getValue());
+		state.setColorState(getValue());
 	}
 
 	@Override
