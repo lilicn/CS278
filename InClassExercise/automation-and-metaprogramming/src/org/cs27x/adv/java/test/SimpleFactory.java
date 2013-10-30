@@ -27,5 +27,11 @@ public class SimpleFactory implements InvocationProcessorFactory {
 	public void setTestProcessor(TestProcessor testProcessor) {
 		testProcessor_ = testProcessor;
 	}
+
+	@Override
+	public void addProcessor(Class<?> c, InvocationProcessor<?> invoProc) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }

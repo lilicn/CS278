@@ -7,15 +7,16 @@ import java.lang.reflect.Method;
 import java.util.List;
 
 import org.cs27x.adv.java.InvocationProcessor;
+import org.cs27x.adv.java.InvocationProcessorFactoryImpl;
 import org.cs27x.adv.java.PreProcessorWrapper;
 import org.cs27x.adv.java.directives.Echo;
 import org.cs27x.adv.java.directives.TimeMe;
 import org.cs27x.adv.java.processors.EchoProcessor;
 import org.cs27x.adv.java.processors.TimeMeProcessor;
-import org.cs27x.asgn.proc.AsgnStep;
+//import org.cs27x.asgn.proc.AsgnStep;
 import org.junit.Test;
 
-@AsgnStep("5")
+//@AsgnStep("5")
 /**
  * Create new test methods, annotated with @Test, that
  * checks to ensure that your InvocationProcssorFactory,
@@ -27,8 +28,8 @@ public class PreProcessorWrapperTest {
 
 	public static class TestObj {
 
-		@TestDirective
 		@Echo("foo()")
+		@TestDirective
 		public void foo() {
 		}
 
@@ -42,6 +43,7 @@ public class PreProcessorWrapperTest {
 		}
 	}
 
+
 	@Test
 	public void testInvocationProcessorExtraction() throws Exception {
 		TestObj obj = new TestObj();
@@ -50,8 +52,9 @@ public class PreProcessorWrapperTest {
 		Method bar = TestObj.class.getMethod("bar", new Class[0]);
 
 		PreProcessorWrapper wrapper = new PreProcessorWrapper(obj);
+		wrapper.setFactory(new InvocationProcessorFactoryImpl());
 		List<InvocationProcessor<?>> procs = wrapper.getProcessors(foo);
-		assertEquals(1, procs.size());
+		assertEquals(2, procs.size());
 
 		InvocationProcessor<?> proc = procs.get(0);
 		assertEquals(EchoProcessor.class, proc.getClass());
@@ -74,7 +77,6 @@ public class PreProcessorWrapperTest {
 		TestObj wrapped = PreProcessorWrapper.wrap(obj, factory);
 
 		wrapped.foo();
-
 		TestProcessor proc = factory.getTestProcessor();
 		assertTrue(proc.wasPreprocessCalled());
 		assertTrue(proc.wasPostProcessCalled());

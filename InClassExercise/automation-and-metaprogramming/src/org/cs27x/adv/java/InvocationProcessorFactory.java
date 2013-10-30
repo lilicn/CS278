@@ -2,10 +2,10 @@ package org.cs27x.adv.java;
 
 import java.lang.annotation.Annotation;
 
-import org.cs27x.asgn.proc.AsgnStep;
+//import org.cs27x.asgn.proc.AsgnStep;
 
 
-@AsgnStep("1")
+//@AsgnStep("1")
 /**
  * Create an implementation of this interface that allows
  * annotations to be mapped to InvocationProcessors. Your
@@ -19,4 +19,5 @@ public interface InvocationProcessorFactory {
 
 	public <PreProc extends Annotation> InvocationProcessor<PreProc> getProcessor(PreProc proc);
 	
+	public void addProcessor(Class<?> c, InvocationProcessor<?> invoProc);
 }

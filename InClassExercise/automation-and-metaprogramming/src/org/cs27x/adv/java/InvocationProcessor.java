@@ -1,6 +1,5 @@
 package org.cs27x.adv.java;
 
-import org.cs27x.asgn.proc.AsgnStep;
 
 /**
  * This pre / post execution logic framework is extended
@@ -16,7 +15,7 @@ import org.cs27x.asgn.proc.AsgnStep;
  * 
  */
 
-@AsgnStep("4")
+//@AsgnStep("4")
 /**
  * Create three interesting / useful implementations
  * of an InvocationProcessor and associated annotations
